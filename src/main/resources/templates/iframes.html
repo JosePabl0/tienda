@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Interfaz de iFrames - SOUNDCORE -->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SOUNDCORE - iFrames</title>
+        <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+
+        <!-- Header superior -->
+        <header>
+            <nav>
+                <a class="logo" href="/">SOUNDCORE</a>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-link menu-item" href="/ejemplo2">
+                            Mi Música
+                        </a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-link menu-item" href="/multimedia">
+                            Demos
+                        </a>
+                    </li>
+
+                    <li class="nav-menu-item">
+                        <a class="nav-link menu-item active" href="/iframes">
+                            iFrames
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Panel lateral -->
+        <aside>
+
+            <span class="category-tag">
+                Módulo
+            </span>
+
+            <h1 class="aside-title">
+                iFrames
+            </h1>
+
+            <p class="aside-description">
+                Integración de listas de Spotify, sesiones de video en vivo y mapa de estudio sobre la plataforma SOUNDCORE.
+            </p>
+
+            <div class="aside-nav">
+                <a href="#spotify-player" class="aside-link">
+                    📌 Playlist Spotify
+                </a>
+
+                <a href="#youtube" class="aside-link">
+                    🎬 Video / Lanzamientos
+                </a>
+
+                <a href="#ubicacion" class="aside-link">
+                    📍 Ubicación de Estudio
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- Sección principal -->
+        <section>
+
+            <h2 class="section-title">
+                Integración de Recursos Musicales
+            </h2>
+
+            <p class="section-subtitle">
+                Contenido incrustado mediante iFrames de plataformas y sitios externos de música pertinentes.
+            </p>
+
+            <div class="card-list">
+
+                <!-- Artículo 1: Playlist de Spotify -->
+                <article id="spotify-player" class="card-item">
+
+                    <div class="card-header">
+                        <h3>
+                            Mi Lista Preferida
+                        </h3>
+
+                        <span class="badge badge-spotify">
+                            Spotify Embed
+                        </span>
+                    </div>
+
+                    <iframe
+                        class="iframe-spotify"
+                        src="https://open.spotify.com/embed/playlist/4C6bajRTElEvt4UpGoTyOa?utm_source=generator&theme=0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe>
+
+                </article>
+
+                <!-- Artículo 2: Video de YouTube -->
+                <article id="youtube" class="card-item">
+
+                    <div class="card-header">
+                        <h3>
+                            Lanzamiento / Sesión en Vivo
+                        </h3>
+
+                        <span class="badge badge-youtube">
+                            YouTube
+                        </span>
+                    </div>
+
+                    <div class="video-aspect">
+                        <iframe
+                            src="https://www.youtube.com/embed/yScNIsLTLYA"
+                            title="Reproductor de Video YouTube"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </article>
+
+                <!-- Artículo 3: Ubicación del Estudio -->
+                <article id="ubicacion" class="card-item">
+
+                    <div class="card-header">
+                        <h3>
+                            Ubicación del Estudio de Grabación
+                        </h3>
+
+                        <span class="badge badge-maps">
+                            Google Maps
+                        </span>
+                    </div>
+
+                    <div class="map-aspect">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.138115551783!2d-84.00616509999999!3d9.9933394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e66128c5f425%3A0x34e639cd116a577e!2sF%C3%A1brica%20Nacional%20de%20Banderas!5e0!3m2!1sen!2scr!4v1748033891099!5m2!1sen!2scr"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            Todos los Derechos Reservados SOUNDCORE 2026 &copy;
+        </footer>
+
+    </body>
+</html>
